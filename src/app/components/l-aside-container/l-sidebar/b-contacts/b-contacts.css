@@ -1,0 +1,41 @@
+.b-contacts__e-icons {
+  margin-bottom: 16px;
+}
+.b-contacts__e-icon {
+  margin-right: 16px;
+}
+.b-contacts__e-address {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.b-contacts__e-mail {
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+.b-contacts__e-phone {
+  color: #1b1c21;
+  font-family: TT Lakes Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133.333%;
+  letter-spacing: -0.6px;
+}
+.b-contacts--box-model {
+  margin: auto 0 40px 24px;
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .b-contacts--box-model {
+    margin: auto 0 8px 16px;
+  }
+}
+/* ---- TABLET ---- */
+/* ---- DESKTOP ---- *//*# sourceMappingURL=b-contacts.css.map */

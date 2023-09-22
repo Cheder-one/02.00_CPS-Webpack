@@ -1,0 +1,68 @@
+@import url(../app/components/l-main-container/index.css);
+@import url(../app/components/l-aside-container/index.css);
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background: #f8f8f8;
+  font-family: TT Lakes;
+}
+
+button,
+a {
+  all: initial;
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../app/assets/font/TTLakes-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("../app/assets/font/TTLakes-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("../app/assets/font/TTLakes-Bold.woff") format("woff");
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1439.9px) {
+  body {
+    display: flex;
+
+    .l-main-content {
+      flex-direction: column;
+    }
+    .l-aside-container {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      order: -1;
+    }
+  }
+}
+
+/* !----- DEVELOP_MODE -----! */
+.l-aside-container {
+  display: none;
+}

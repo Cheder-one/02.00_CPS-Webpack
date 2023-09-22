@@ -1,0 +1,55 @@
+.b-about {
+  display: flex;
+}
+.b-about__e-logo-photo {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .b-about {
+    flex-direction: column;
+  }
+  .b-about__e-text-break {
+    display: none;
+  }
+  .b-about__e-logo-photo {
+    flex-shrink: 0;
+    border-radius: 0;
+  }
+  .b-about--box-model {
+    margin-bottom: 35px;
+  }
+}
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .b-about {
+    gap: 48px;
+  }
+  .b-about__e-logo-photo {
+    width: 360px;
+    height: 260px;
+    flex-shrink: 0;
+  }
+  .b-about--box-model {
+    margin: 0 24px;
+    margin-bottom: 40px;
+  }
+}
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-about {
+    gap: 36px;
+  }
+  .b-about__e-logo-photo {
+    width: 531.346px;
+    height: 307px;
+    flex-shrink: 0;
+  }
+  .b-about--box-model {
+    margin: 0 28px 48px 32px;
+  }
+}/*# sourceMappingURL=b-about.css.map */

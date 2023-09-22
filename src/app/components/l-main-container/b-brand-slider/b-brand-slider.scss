@@ -1,0 +1,12 @@
+.b-brand-slider {
+  background-color: green;
+
+  &__e-item {
+    background-color: greenyellow;
+  }
+
+  &--box-container {
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -19,4 +19,33 @@
 }
 .b-brands__title > span {
   margin-left: 16px;
+}
+.b-brands--box-model {
+  padding-bottom: 38px;
+}
+
+/* ---- MOBILE ---- */
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .b-brands__title {
+    margin-bottom: 24px;
+  }
+  .b-brands__title > span {
+    margin-left: 24px;
+  }
+  .b-brands--box-model {
+    padding-bottom: 34px;
+  }
+}
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-brands__title {
+    margin-bottom: 40px;
+  }
+  .b-brands__title > span {
+    margin-left: 32px;
+  }
+  .b-brands--box-model {
+    padding-bottom: 34px;
+  }
 }/*# sourceMappingURL=b-brands.css.map */

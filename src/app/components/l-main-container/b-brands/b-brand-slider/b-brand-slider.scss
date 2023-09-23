@@ -1,11 +1,13 @@
 .b-brand-slider {
   &__e-wrapper {
-    height: 72px;
     margin: 0 0 16px 16px;
   }
 
   &__e-slide {
-    height: 100%;
+    min-width: 224px;
+    height: 72px;
+    flex-shrink: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,18 +24,6 @@
       display: inherit;
       align-items: inherit;
     }
-
-    // &-items {
-    //   height: 100%;
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: space-between;
-
-    //   & > a {
-    //     display: inherit;
-    //     align-items: inherit;
-    //   }
-    // }
   }
 
   &__e-pagination {
@@ -53,6 +43,41 @@
       &-active {
         background-color: #b5b6bc;
       }
+    }
+  }
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  //
+}
+
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .b-brand-slider {
+    &__e-wrapper {
+      margin: 0 0 24px 24px;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 24px;
+    }
+
+    &__e-slide:nth-child(4n) {
+      display: none;
+    }
+  }
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-brand-slider {
+    &__e-wrapper {
+      margin: 0 0 16px 16px;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 24px;
     }
   }
 }

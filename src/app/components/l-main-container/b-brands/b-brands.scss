@@ -23,4 +23,47 @@
       margin-left: 16px;
     }
   }
+
+  &--box-model {
+    padding-bottom: 38px;
+  }
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  //
+}
+
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .b-brands {
+    &__title {
+      margin-bottom: 24px;
+
+      & > span {
+        margin-left: 24px;
+      }
+    }
+
+    &--box-model {
+      padding-bottom: 34px;
+    }
+  }
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-brands {
+    &__title {
+      margin-bottom: 40px;
+
+      & > span {
+        margin-left: 32px;
+      }
+    }
+
+    &--box-model {
+      padding-bottom: 34px;
+    }
+  }
 }

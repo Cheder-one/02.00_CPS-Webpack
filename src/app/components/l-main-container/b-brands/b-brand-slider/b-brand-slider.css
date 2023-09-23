@@ -1,9 +1,10 @@
 .b-brand-slider__e-wrapper {
-  height: 72px;
   margin: 0 0 16px 16px;
 }
 .b-brand-slider__e-slide {
-  height: 100%;
+  min-width: 224px;
+  height: 72px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,4 +33,27 @@
 }
 .b-brand-slider .swiper-pagination-bullet-active {
   background-color: #b5b6bc;
+}
+
+/* ---- MOBILE ---- */
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .b-brand-slider__e-wrapper {
+    margin: 0 0 24px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
+  .b-brand-slider__e-slide:nth-child(4n) {
+    display: none;
+  }
+}
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-brand-slider__e-wrapper {
+    margin: 0 0 16px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
 }/*# sourceMappingURL=b-brand-slider.css.map */

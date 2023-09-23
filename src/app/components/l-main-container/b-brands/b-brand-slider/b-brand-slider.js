@@ -10,7 +10,7 @@ export const brandSlider = new Swiper(slider, {
   loop: true,
 
   slidesPerView: 2,
-  spaceBetween: 10,
+  spaceBetween: "16px",
 
   // If we need pagination
   pagination: {
@@ -19,6 +19,3 @@ export const brandSlider = new Swiper(slider, {
     clickable: true
   }
 });
-
-// #B5B6BC
-// #DDDDDD

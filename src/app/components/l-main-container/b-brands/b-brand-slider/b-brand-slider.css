@@ -1,0 +1,21 @@
+.b-brand-slider {
+  background-color: #eaeaea;
+}
+.b-brand-slider__e-item {
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+.b-brand-slider__e-pagination {
+  position: relative;
+  padding-top: 7px;
+}
+.b-brand-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #dddddd;
+  opacity: 1;
+}
+.b-brand-slider .swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}/*# sourceMappingURL=b-brand-slider.css.map */

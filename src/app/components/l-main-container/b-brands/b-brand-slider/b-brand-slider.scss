@@ -1,20 +1,48 @@
 .b-brand-slider {
-  background-color: #eaeaea;
-
   &__e-wrapper {
+    height: 72px;
+    margin: 0 0 16px 16px;
   }
 
-  &__e-item {
+  &__e-slide {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     border-radius: 6px;
     border: 1px solid #eaeaea;
     background: #fff;
+
+    & > img {
+      margin-left: 16px;
+    }
+    & > a {
+      margin-right: 16px;
+      display: inherit;
+      align-items: inherit;
+    }
+
+    // &-items {
+    //   height: 100%;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+
+    //   & > a {
+    //     display: inherit;
+    //     align-items: inherit;
+    //   }
+    // }
   }
 
   &__e-pagination {
-    position: relative;
-    padding-top: 7px;
+    position: static;
   }
+}
 
+/* ----- Swiper-classes ----- */
+.b-brand-slider {
   .swiper {
     &-pagination-bullet {
       width: 12px;

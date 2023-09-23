@@ -1,15 +1,13 @@
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 
-const slider = document.querySelector(".b-brand-slider");
-
-export const brandSlider = new Swiper(slider, {
+export const brandSlider = new Swiper(".b-brand-slider", {
   modules: [Pagination],
 
   direction: "horizontal",
   loop: true,
 
-  slidesPerView: 2,
+  slidesPerView: 1.3,
   spaceBetween: "16px",
 
   // If we need pagination

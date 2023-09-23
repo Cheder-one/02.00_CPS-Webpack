@@ -1,8 +1,12 @@
 .b-brands {
-  background: linear-gradient(270deg, #f8f8f8 0%, #fff 98.61%);
+  background-color: #f8f8f8;
 }
 .b-brands__title {
-  padding: 16px;
+  height: 80px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
   color: #7e7e82;
   font-family: TT Lakes;
   font-size: 16px;
@@ -11,7 +15,8 @@
   line-height: 150%;
   letter-spacing: -0.2px;
   text-transform: uppercase;
+  background: linear-gradient(270deg, #f8f8f8 0%, #fff 98.61%);
 }
-.b-brands--box-model {
-  margin-bottom: 100px;
+.b-brands__title > span {
+  margin-left: 16px;
 }/*# sourceMappingURL=b-brands.css.map */

@@ -1,8 +1,6 @@
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 import "./index.html";
 import "./styles/main.css";
 
-import lMainContainer from "./app/components/l-main-container/l-main-container.js";
+import "./app/components/l-main-container/l-main-container.js";
+
+const bBrandSlider = document.querySelector(".b-brand-slider");

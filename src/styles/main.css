@@ -1,3 +1,6 @@
+@import url("swiper/css") screen and (max-width: 767.9px);
+@import url("swiper/css/navigation") screen and (max-width: 767.9px);
+@import url("swiper/css/pagination") screen and (max-width: 767.9px);
 @import url(../app/components/l-main-container/l-main-container.css);
 @import url(../app/components/l-aside-container/l-aside-container.css);
 *,

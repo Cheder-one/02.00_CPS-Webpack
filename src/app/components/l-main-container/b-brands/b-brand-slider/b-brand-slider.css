@@ -2,7 +2,7 @@
   margin: 0 0 16px 16px;
 }
 .b-brand-slider__e-slide {
-  min-width: 224px;
+  width: 224px;
   height: 72px;
   flex-shrink: 0;
   display: flex;
@@ -39,10 +39,16 @@
 /* ---- TABLET ---- */
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
   .b-brand-slider__e-wrapper {
-    margin: 0 0 24px 24px;
+    margin: 0 24px 24px 24px;
     display: flex;
     flex-wrap: wrap;
     gap: 16px 24px;
+  }
+  .b-brand-slider__e-slide {
+    width: calc(33.33% - 24px);
+  }
+  .b-brand-slider__e-slide:nth-child(3), .b-brand-slider__e-slide:nth-last-child(2) {
+    width: 33.33%;
   }
   .b-brand-slider__e-slide:nth-child(4n) {
     display: none;
@@ -51,9 +57,15 @@
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1023.9px) {
   .b-brand-slider__e-wrapper {
-    margin: 0 0 16px 16px;
+    margin: 0 32px 24px 32px;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 24px;
+    gap: 16px 32px;
+  }
+  .b-brand-slider__e-slide {
+    width: calc(25% - 32px);
+  }
+  .b-brand-slider__e-slide:nth-child(4n) {
+    width: 25%;
   }
 }/*# sourceMappingURL=b-brand-slider.css.map */

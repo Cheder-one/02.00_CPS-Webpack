@@ -126,9 +126,16 @@
                 </p>
               </div>
 
-              <button class="b-about-content__e-read-more">
+              <button class="b-about-content__e-read-more-btn">
                 <img src="./app/assets/img/expand.svg" alt="" />
-                <span>Читать далее</span>
+                <img
+                  class="b-about-content__e-collapse-icon"
+                  src="./app/assets/img/collapse.svg"
+                  alt=""
+                />
+                <span class="b-about-content__e-read-more"
+                  >Читать далее</span
+                >
               </button>
             </section>
 
@@ -149,9 +156,8 @@
           <!-- BRAND SLIDER -->
           <div
             data-mobile="false"
-            class="b-brand-slider b-brand-slider--box-model b-brand-slider--collapsed swiper"
+            class="b-brand-slider b-brand-slider--box-model b-brand-slider--collapse swiper"
           >
-            <!-- Additional required wrapper -->
             <ul class="b-brand-slider__e-wrapper swiper-wrapper">
               <!-- Slides -->
               <li class="b-brand-slider__e-slide swiper-slide">
@@ -260,16 +266,24 @@
                 </a>
               </li>
             </template>
-
-            <button class="b-brand-slider__e-show-more-btn">
-              <img src="./app/assets/img/expand.svg" alt="" />
-              <span
-                class="b-brand-slider__e-show-more b-brand-slider__e-show-more--show"
+            <button
+              class="b-brand-slider__e-more-btn b-brand-slider__e-more-btn--show"
+            >
+              <img
+                class="b-brand-slider__e-more-icon"
+                src="./app/assets/img/expand.svg"
+                alt=""
+              />
+              <img
+                class="b-brand-slider__e-more-icon"
+                src="./app/assets/img/collapse.svg"
+                alt=""
+              />
+              <span class="b-brand-slider__e-show-more"
                 >Показать все</span
               >
             </button>
 
-            <!-- If we need pagination -->
             <div
               class="b-brand-slider__e-pagination swiper-pagination"
             ></div>

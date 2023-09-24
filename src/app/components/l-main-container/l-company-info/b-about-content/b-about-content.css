@@ -8,7 +8,7 @@
   line-height: 128.571%;
   letter-spacing: 0.2px;
 }
-.b-about-content__e-read-more {
+.b-about-content__e-read-more-btn {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -19,6 +19,9 @@
   font-weight: 500;
   line-height: 150%;
   letter-spacing: -0.2px;
+}
+.b-about-content__e-collapse-icon {
+  display: none;
 }
 
 /* ---- MOBILE ---- */

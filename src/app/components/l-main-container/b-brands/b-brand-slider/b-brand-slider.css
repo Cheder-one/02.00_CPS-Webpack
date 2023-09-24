@@ -20,6 +20,23 @@
   display: inherit;
   align-items: inherit;
 }
+.b-brand-slider__e-more-container {
+  margin-left: 24px;
+  display: flex;
+  position: relative;
+}
+.b-brand-slider__e-show-more {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
 .b-brand-slider__e-pagination {
   position: static;
 }
@@ -36,6 +53,11 @@
 }
 
 /* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .b-brand-slider__e-more-container {
+    display: none;
+  }
+}
 /* ---- TABLET ---- */
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
   .b-brand-slider__e-wrapper {
@@ -67,5 +89,8 @@
   }
   .b-brand-slider__e-slide:nth-child(4n) {
     width: 25%;
+  }
+  .b-brand-slider__e-more-container {
+    margin-left: 32px;
   }
 }/*# sourceMappingURL=b-brand-slider.css.map */

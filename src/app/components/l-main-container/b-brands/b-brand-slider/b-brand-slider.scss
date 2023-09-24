@@ -26,6 +26,25 @@
     }
   }
 
+  &__e-more-container {
+    margin-left: 24px;
+    display: flex;
+    position: relative;
+  }
+  &__e-show-more {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    color: #1b1c21;
+    font-family: TT Lakes Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+  }
+
   &__e-pagination {
     position: static;
   }
@@ -49,7 +68,11 @@
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
-  //
+  .b-brand-slider {
+    &__e-more-container {
+      display: none;
+    }
+  }
 }
 
 /* ---- TABLET ---- */
@@ -90,6 +113,10 @@
     }
     &__e-slide:nth-child(4n) {
       width: 25%;
+    }
+
+    &__e-more-container {
+      margin-left: 32px;
     }
   }
 }

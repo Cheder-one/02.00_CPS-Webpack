@@ -82,8 +82,19 @@
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
   .b-brand-slider {
-    &__e-show-more {
+    &__e-show-more-btn {
       display: none;
+    }
+
+    &--expanded {
+      .b-brand-slider {
+        &__e-wrapper {
+          margin-bottom: 16px;
+        }
+        &__e-slide:nth-last-child(-n + 3) {
+          display: none;
+        }
+      }
     }
   }
 }

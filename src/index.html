@@ -223,7 +223,8 @@
                   <img src="./app/assets/img/ic/go.svg" alt="go" />
                 </a>
               </li>
-              <li class="b-brand-slider__e-slide swiper-slide">
+
+              <li class="b-brand-slider__e-slide swiper-slide" hidden>
                 <img
                   src="./app/assets/img/brand/lenovo.svg"
                   alt="lenovo"
@@ -232,7 +233,7 @@
                   <img src="./app/assets/img/ic/go.svg" alt="go" />
                 </a>
               </li>
-              <li class="b-brand-slider__e-slide swiper-slide">
+              <li class="b-brand-slider__e-slide swiper-slide" hidden>
                 <img
                   src="./app/assets/img/brand/samsung.svg"
                   alt="samsung"
@@ -241,7 +242,7 @@
                   <img src="./app/assets/img/ic/go.svg" alt="go" />
                 </a>
               </li>
-              <li class="b-brand-slider__e-slide swiper-slide">
+              <li class="b-brand-slider__e-slide swiper-slide" hidden>
                 <img
                   src="./app/assets/img/brand/apple.svg"
                   alt="apple"
@@ -251,6 +252,36 @@
                 </a>
               </li>
             </ul>
+
+            <template class="b-brand-slider__hidden-brands">
+              <li class="b-brand-slider__e-slide !swiper-slide">
+                <img
+                  src="./app/assets/img/brand/lenovo.svg"
+                  alt="lenovo"
+                />
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
+              <li class="b-brand-slider__e-slide !swiper-slide">
+                <img
+                  src="./app/assets/img/brand/samsung.svg"
+                  alt="samsung"
+                />
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
+              <li class="b-brand-slider__e-slide !swiper-slide">
+                <img
+                  src="./app/assets/img/brand/apple.svg"
+                  alt="apple"
+                />
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
+            </template>
 
             <button class="b-brand-slider__e-show-more-btn">
               <img src="./app/assets/img/expand.svg" alt="" />
@@ -265,6 +296,8 @@
               class="b-brand-slider__e-pagination swiper-pagination"
             ></div>
           </div>
+
+          <div class="b-brands__e-fade"></div>
         </div>
       </main>
     </div>

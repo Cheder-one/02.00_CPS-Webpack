@@ -26,4 +26,4 @@ showMoreBtn.addEventListener("click", () => {
 });
 
 // TODO Поменять стрелочку вверх (при Скрыть)
-// TODO Сделать Fade слайдеру
+// TODO Реализовать скрытие без багов

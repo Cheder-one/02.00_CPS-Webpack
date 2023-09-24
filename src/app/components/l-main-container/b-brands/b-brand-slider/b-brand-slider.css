@@ -58,7 +58,13 @@
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
-  .b-brand-slider__e-show-more {
+  .b-brand-slider__e-show-more-btn {
+    display: none;
+  }
+  .b-brand-slider--expanded .b-brand-slider__e-wrapper {
+    margin-bottom: 16px;
+  }
+  .b-brand-slider--expanded .b-brand-slider__e-slide:nth-last-child(-n+3) {
     display: none;
   }
 }

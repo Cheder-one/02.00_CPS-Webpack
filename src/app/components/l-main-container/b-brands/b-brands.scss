@@ -4,7 +4,6 @@
   &__title {
     height: 80px;
     margin-bottom: 16px;
-
     display: flex;
     flex-shrink: 0;
     align-items: center;
@@ -26,12 +25,25 @@
 
   &--box-model {
     padding-bottom: 24px;
+    position: relative;
   }
 }
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
-  //
+  .b-brands {
+    &__e-fade {
+      width: 24px;
+      height: 81px;
+      flex-shrink: 0;
+      position: absolute;
+      right: 0;
+      bottom: 60px;
+      z-index: 10;
+      // prettier-ignore
+      background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+    }
+  }
 }
 
 /* ---- TABLET ---- */

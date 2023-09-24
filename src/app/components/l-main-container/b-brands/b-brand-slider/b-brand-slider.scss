@@ -46,7 +46,7 @@
 
   &--collapsed {
     .b-brand-slider {
-      &__e-slide:nth-last-child(-n + 3) {
+      &__e-slide--hidden {
         display: none;
       }
     }
@@ -56,7 +56,7 @@
       &__e-wrapper {
         margin-bottom: 46px;
       }
-      &__e-slide:nth-last-child(-n + 3) {
+      &__e-slide--hidden {
         display: flex;
       }
     }
@@ -86,14 +86,21 @@
       display: none;
     }
 
+    &--collapsed {
+      // .b-brand-slider {
+      //   &__e-slide--hidden {
+      //     display: none;
+      //   }
+      // }
+    }
     &--expanded {
       .b-brand-slider {
         &__e-wrapper {
           margin-bottom: 16px;
         }
-        &__e-slide:nth-last-child(-n + 3) {
-          display: none;
-        }
+        // &__e-slide--hidden {
+        //   display: none;
+        // }
       }
     }
   }

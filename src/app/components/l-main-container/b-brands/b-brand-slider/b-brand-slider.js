@@ -1,15 +1,47 @@
 import Swiper from "swiper";
 import { Pagination } from "swiper/modules";
 
-let brandSlider = null;
-const bBrandSlider = document.querySelector(".b-brand-slider");
+let mobileSlider = null;
+
+const brandSlider = document.querySelector(".b-brand-slider");
+const sliderWrapper = document.querySelector(
+  ".b-brand-slider__e-wrapper"
+);
+const brandsTemplate = document.querySelector(
+  "#b-brand-slider__hidden-brands"
+);
+
+const findHiddenBrands = () => {
+  return document.querySelectorAll(
+    ".b-brand-slider__e-slide--hidden"
+  );
+};
+
+const addHiddenBrands = () => {
+  const hiddenBrands = findHiddenBrands();
+
+  if (hiddenBrands.length === 0) {
+    const clonedTemplate = brandsTemplate.content.cloneNode(true);
+    sliderWrapper.appendChild(clonedTemplate);
+  }
+};
+
+const removeHiddenBrands = () => {
+  const hiddenBrands = findHiddenBrands();
+
+  if (hiddenBrands.length > 0) {
+    hiddenBrands.forEach((el) => el.remove());
+  }
+};
 
 const toggleMobileSlider = () => {
   if (
     window.innerWidth <= 767.9 &&
-    bBrandSlider.dataset.mobile === "false"
+    brandSlider.dataset.mobile === "false"
   ) {
-    brandSlider = new Swiper(bBrandSlider, {
+    removeHiddenBrands();
+
+    mobileSlider = new Swiper(brandSlider, {
       modules: [Pagination],
 
       loop: true,
@@ -23,14 +55,17 @@ const toggleMobileSlider = () => {
         clickable: true
       }
     });
-    bBrandSlider.dataset.mobile = "true";
+
+    brandSlider.dataset.mobile = "true";
   }
 
   if (window.innerWidth >= 768) {
-    bBrandSlider.dataset.mobile = "false";
-    if (bBrandSlider.classList.contains("swiper-initialized")) {
-      brandSlider.destroy();
+    brandSlider.dataset.mobile = "false";
+
+    if (brandSlider.classList.contains("swiper-initialized")) {
+      mobileSlider.destroy();
     }
+    addHiddenBrands();
   }
 };
 

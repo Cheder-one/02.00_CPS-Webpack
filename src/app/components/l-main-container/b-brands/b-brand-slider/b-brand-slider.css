@@ -35,13 +35,13 @@
 .b-brand-slider__e-pagination {
   position: static;
 }
-.b-brand-slider--collapsed .b-brand-slider__e-slide:nth-last-child(-n+3) {
+.b-brand-slider--collapsed .b-brand-slider__e-slide--hidden {
   display: none;
 }
 .b-brand-slider--expanded .b-brand-slider__e-wrapper {
   margin-bottom: 46px;
 }
-.b-brand-slider--expanded .b-brand-slider__e-slide:nth-last-child(-n+3) {
+.b-brand-slider--expanded .b-brand-slider__e-slide--hidden {
   display: flex;
 }
 
@@ -63,9 +63,6 @@
   }
   .b-brand-slider--expanded .b-brand-slider__e-wrapper {
     margin-bottom: 16px;
-  }
-  .b-brand-slider--expanded .b-brand-slider__e-slide:nth-last-child(-n+3) {
-    display: none;
   }
 }
 /* ---- TABLET ---- */

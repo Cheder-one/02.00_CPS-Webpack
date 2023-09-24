@@ -8,14 +8,10 @@
   line-height: 128.571%;
   letter-spacing: 0.2px;
 }
-.b-about-content__e-more-container {
+.b-about-content__e-read-more {
   margin-bottom: 16px;
   display: flex;
-}
-.b-about-content__e-read-more {
-  display: flex;
   align-items: center;
-  cursor: pointer;
   color: #1b1c21;
   font-family: TT Lakes Medium;
   font-size: 16px;

@@ -26,15 +26,10 @@
     }
   }
 
-  &__e-more-container {
+  &__e-show-more-btn {
     margin-left: 24px;
     display: flex;
-    position: relative;
-  }
-  &__e-show-more {
-    display: flex;
     align-items: center;
-    cursor: pointer;
 
     color: #1b1c21;
     font-family: TT Lakes Medium;
@@ -47,6 +42,24 @@
 
   &__e-pagination {
     position: static;
+  }
+
+  &--collapsed {
+    .b-brand-slider {
+      &__e-slide:nth-last-child(-n + 3) {
+        display: none;
+      }
+    }
+  }
+  &--expanded {
+    .b-brand-slider {
+      &__e-wrapper {
+        margin-bottom: 46px;
+      }
+      &__e-slide:nth-last-child(-n + 3) {
+        display: flex;
+      }
+    }
   }
 }
 
@@ -69,7 +82,7 @@
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
   .b-brand-slider {
-    &__e-more-container {
+    &__e-show-more {
       display: none;
     }
   }
@@ -89,7 +102,7 @@
       width: calc(33.33% - 24px);
     }
     &__e-slide:nth-child(3),
-    &__e-slide:nth-last-child(2) {
+    &__e-slide:nth-child(4n + 3) {
       width: 33.33%;
     }
     &__e-slide:nth-child(4n) {
@@ -115,7 +128,7 @@
       width: 25%;
     }
 
-    &__e-more-container {
+    &__e-show-more-btn {
       margin-left: 32px;
     }
   }

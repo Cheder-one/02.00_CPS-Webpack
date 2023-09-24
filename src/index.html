@@ -126,12 +126,10 @@
                 </p>
               </div>
 
-              <div class="b-about-content__e-more-container">
-                <div class="b-about-content__e-read-more">
-                  <img src="./app/assets/img/expand.svg" alt="" />
-                  <span>Читать далее</span>
-                </div>
-              </div>
+              <button class="b-about-content__e-read-more">
+                <img src="./app/assets/img/expand.svg" alt="" />
+                <span>Читать далее</span>
+              </button>
             </section>
 
             <img
@@ -151,7 +149,7 @@
           <!-- BRAND SLIDER -->
           <div
             data-mobile="false"
-            class="b-brand-slider b-brand-slider--box-model swiper"
+            class="b-brand-slider b-brand-slider--box-model b-brand-slider--collapsed swiper"
           >
             <!-- Additional required wrapper -->
             <ul class="b-brand-slider__e-wrapper swiper-wrapper">
@@ -225,14 +223,42 @@
                   <img src="./app/assets/img/ic/go.svg" alt="go" />
                 </a>
               </li>
+              <li class="b-brand-slider__e-slide swiper-slide">
+                <img
+                  src="./app/assets/img/brand/lenovo.svg"
+                  alt="lenovo"
+                />
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
+              <li class="b-brand-slider__e-slide swiper-slide">
+                <img
+                  src="./app/assets/img/brand/samsung.svg"
+                  alt="samsung"
+                />
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
+              <li class="b-brand-slider__e-slide swiper-slide">
+                <img
+                  src="./app/assets/img/brand/apple.svg"
+                  alt="apple"
+                />
+                <a href="#">
+                  <img src="./app/assets/img/ic/go.svg" alt="go" />
+                </a>
+              </li>
             </ul>
 
-            <div class="b-brand-slider__e-more-container">
-              <div class="b-brand-slider__e-show-more">
-                <img src="./app/assets/img/expand.svg" alt="" />
-                <span>Показать все</span>
-              </div>
-            </div>
+            <button class="b-brand-slider__e-show-more-btn">
+              <img src="./app/assets/img/expand.svg" alt="" />
+              <span
+                class="b-brand-slider__e-show-more b-brand-slider__e-show-more--show"
+                >Показать все</span
+              >
+            </button>
 
             <!-- If we need pagination -->
             <div

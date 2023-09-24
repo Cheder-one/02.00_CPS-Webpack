@@ -20,15 +20,10 @@
   display: inherit;
   align-items: inherit;
 }
-.b-brand-slider__e-more-container {
+.b-brand-slider__e-show-more-btn {
   margin-left: 24px;
   display: flex;
-  position: relative;
-}
-.b-brand-slider__e-show-more {
-  display: flex;
   align-items: center;
-  cursor: pointer;
   color: #1b1c21;
   font-family: TT Lakes Medium;
   font-size: 16px;
@@ -39,6 +34,15 @@
 }
 .b-brand-slider__e-pagination {
   position: static;
+}
+.b-brand-slider--collapsed .b-brand-slider__e-slide:nth-last-child(-n+3) {
+  display: none;
+}
+.b-brand-slider--expanded .b-brand-slider__e-wrapper {
+  margin-bottom: 46px;
+}
+.b-brand-slider--expanded .b-brand-slider__e-slide:nth-last-child(-n+3) {
+  display: flex;
 }
 
 /* ----- Swiper-classes ----- */
@@ -54,7 +58,7 @@
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
-  .b-brand-slider__e-more-container {
+  .b-brand-slider__e-show-more {
     display: none;
   }
 }
@@ -69,7 +73,7 @@
   .b-brand-slider__e-slide {
     width: calc(33.33% - 24px);
   }
-  .b-brand-slider__e-slide:nth-child(3), .b-brand-slider__e-slide:nth-last-child(2) {
+  .b-brand-slider__e-slide:nth-child(3), .b-brand-slider__e-slide:nth-child(4n+3) {
     width: 33.33%;
   }
   .b-brand-slider__e-slide:nth-child(4n) {
@@ -90,7 +94,7 @@
   .b-brand-slider__e-slide:nth-child(4n) {
     width: 25%;
   }
-  .b-brand-slider__e-more-container {
+  .b-brand-slider__e-show-more-btn {
     margin-left: 32px;
   }
 }/*# sourceMappingURL=b-brand-slider.css.map */

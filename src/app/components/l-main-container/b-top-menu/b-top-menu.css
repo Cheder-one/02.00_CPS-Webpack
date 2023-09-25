@@ -1,0 +1,56 @@
+.b-top-menu {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 2px solid #d9fff5;
+}
+.b-top-menu__e-divider {
+  width: 2px;
+  height: 32px;
+  flex-shrink: 0;
+  align-self: center;
+  border-radius: 1px;
+  background: #eaeaea;
+}
+.b-top-menu--box-model {
+  padding: 0 16px;
+  margin-bottom: 24px;
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .b-top-menu__e-divider:nth-child(7) {
+    margin-right: auto;
+  }
+  .b-top-menu__e-nav-icon, .b-top-menu__e-logo {
+    margin-right: 16px;
+  }
+  .b-top-menu__e-nav-icon:last-child {
+    margin-right: 0;
+  }
+  .b-top-menu__e-nav-icon:nth-child(n+3):nth-child(-n+6) {
+    display: none;
+  }
+  .b-top-menu__e-divider:nth-child(2) {
+    display: none;
+  }
+}
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .b-top-menu__e-logo {
+    margin-right: auto;
+  }
+  .b-top-menu__e-nav-icon, .b-top-menu__e-divider {
+    margin-right: 16px;
+  }
+  .b-top-menu__e-nav-icon:last-child {
+    margin-right: 0;
+  }
+}
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-top-menu {
+    display: none;
+  }
+}/*# sourceMappingURL=b-top-menu.css.map */

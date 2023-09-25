@@ -1,0 +1,42 @@
+.b-slide-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  overflow-x: auto;
+
+  &__e-item {
+    flex-shrink: 0;
+    color: #7e7e82;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+
+    &--active {
+      padding: 8px;
+      border: 2px solid #b8ffec;
+      border-radius: 6px;
+      background: #fff;
+    }
+  }
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  //
+}
+
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  //
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-slide-row {
+    flex-flow: row wrap;
+    overflow: visible;
+  }
+}

@@ -1,0 +1,79 @@
+.b-header {
+  display: flex;
+
+  &__e-title {
+    margin-left: 12px;
+    color: #1b1c21;
+    font-family: TT Lakes Bold;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.857%;
+    letter-spacing: -0.6px;
+  }
+  &__e-nav-icon {
+    display: none;
+    margin-right: 32px;
+  }
+  &__e-nav-icon:last-child {
+    margin-right: 0;
+  }
+  &__e-nav-icon > span {
+    padding-right: 8px;
+    color: #1b1c21;
+    text-align: right;
+    font-family: TT Lakes Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+  }
+  &--box-model {
+    margin-bottom: 24px;
+  }
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  /*  */
+}
+
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .b-header {
+    &__e-title {
+      margin-left: 24px;
+    }
+    &--box-model {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-header {
+    &__e-title {
+      margin-left: 30px;
+      margin-right: auto;
+    }
+    &__e-nav-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #1b1c21;
+      text-align: right;
+      font-family: TT Lakes;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: -0.2px;
+    }
+    &--box-model {
+      margin: 42px 16px 8px 0;
+    }
+  }
+}

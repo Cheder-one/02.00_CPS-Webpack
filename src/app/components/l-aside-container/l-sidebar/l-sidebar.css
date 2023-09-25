@@ -1,0 +1,66 @@
+@import url(./b-sidebar-top/b-sidebar-top.css);
+@import url(./b-menu-list/b-menu-list.css);
+@import url(./b-contacts/b-contacts.css);
+.l-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+.l-sidebar__e-lang-list {
+  margin-left: 24px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+.l-sidebar__e-lang {
+  margin-bottom: 32px;
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+.l-sidebar__e-lang--active {
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+.l-sidebar--box-model {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .l-sidebar__e-lang-list {
+    margin-left: 16px;
+  }
+  .l-sidebar--box-model {
+    width: 100vw;
+    max-width: 360px;
+  }
+}
+/* ---- TABLET ---- */
+/* ---- LAPTOP ---- */
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1439.9px) {
+  .l-sidebar {
+    box-shadow: none;
+  }
+  .l-sidebar--box-model {
+    position: relative;
+    width: 320px;
+  }
+}/*# sourceMappingURL=l-sidebar.css.map */

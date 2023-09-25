@@ -1,0 +1,36 @@
+.b-sidebar-top {
+  display: flex;
+  align-items: center;
+}
+.b-sidebar-top__e-logo {
+  margin-right: auto;
+}
+.b-sidebar-top__e-icon:nth-child(1) {
+  margin-right: 16px;
+}
+.b-sidebar-top--box-model {
+  margin: 18px 24px 46px;
+}
+
+/* ---- MOBILE ---- */
+@media screen and (max-width: 767.9px) {
+  .b-sidebar-top--box-model {
+    margin: 18px 16px 26px;
+  }
+}
+/* ---- TABLET ---- */
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .b-sidebar-top--box-model {
+    margin-bottom: 50px;
+  }
+}
+/* ---- LAPTOP ---- */
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1439.9px) {
+  .b-sidebar-top__e-icon:nth-child(1) {
+    display: none;
+  }
+  .b-sidebar-top--box-model {
+    margin: 30px 30px 38px 22px;
+  }
+}/*# sourceMappingURL=b-sidebar-top.css.map */

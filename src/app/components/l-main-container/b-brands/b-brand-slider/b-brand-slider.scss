@@ -17,10 +17,10 @@
     background: #fff;
 
     & > img {
-      padding-left: 16px;
+      margin-left: 16px;
     }
     & > a {
-      padding-right: 16px;
+      margin-right: 16px;
       display: inherit;
       align-items: inherit;
     }
@@ -119,7 +119,7 @@
 }
 
 /* ---- TABLET ---- */
-@media screen and (min-width: 767.9px) and (max-width: 1119.9px) {
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
   .b-brand-slider {
     &__e-wrapper {
       margin: 0 24px 24px 24px;
@@ -128,31 +128,22 @@
       gap: 16px 24px;
     }
 
+    &__e-slide {
+      width: calc(33.33% - 24px);
+    }
+    &__e-slide:nth-child(3),
+    &__e-slide:nth-child(4n + 3) {
+      width: 33.33%;
+    }
     &__e-slide:nth-child(4n) {
       display: none;
-    }
-
-    &--expand {
-      .b-brand-slider {
-        &__e-wrapper {
-          margin-bottom: 46px;
-        }
-        &__e-slide--hidden {
-          display: flex;
-        }
-        &__e-slide:nth-child(4n) {
-          display: flex;
-        }
-      }
     }
   }
 }
 
 /* ---- DESKTOP ---- */
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1023.9px) {
   .b-brand-slider {
-    position: relative;
-
     &__e-wrapper {
       margin: 0 32px 24px 32px;
       display: flex;
@@ -161,7 +152,10 @@
     }
 
     &__e-slide {
-      width: 240px;
+      width: calc(25% - 32px);
+    }
+    &__e-slide:nth-child(4n) {
+      width: 25%;
     }
 
     &__e-more-btn {

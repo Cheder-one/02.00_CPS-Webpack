@@ -86,9 +86,6 @@
     flex-wrap: wrap;
     gap: 16px 24px;
   }
-  .b-brand-slider__e-slide {
-    margin-right: 0 !important;
-  }
   .b-brand-slider__e-slide:nth-child(4n) {
     display: none;
   }
@@ -115,7 +112,6 @@
   }
   .b-brand-slider__e-slide {
     width: 240px;
-    margin-right: 0 !important;
   }
   .b-brand-slider__e-more-btn {
     margin-left: 32px;

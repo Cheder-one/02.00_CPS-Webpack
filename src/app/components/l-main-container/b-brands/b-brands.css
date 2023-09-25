@@ -41,7 +41,7 @@
   }
 }
 /* ---- TABLET ---- */
-@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+@media screen and (min-width: 767.9px) and (max-width: 1119.9px) {
   .b-brands__title {
     margin-bottom: 24px;
   }
@@ -53,7 +53,7 @@
   }
 }
 /* ---- DESKTOP ---- */
-@media screen and (min-width: 1023.9px) {
+@media screen and (min-width: 1120px) {
   .b-brands__title {
     margin-bottom: 40px;
   }

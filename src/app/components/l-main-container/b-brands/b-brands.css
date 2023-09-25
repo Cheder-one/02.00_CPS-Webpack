@@ -22,7 +22,6 @@
 }
 .b-brands--box-model {
   padding-bottom: 24px;
-  position: relative;
 }
 
 /* ---- MOBILE ---- */
@@ -36,6 +35,9 @@
     bottom: 60px;
     z-index: 10;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0) 100%);
+  }
+  .b-brands--box-model {
+    position: relative;
   }
 }
 /* ---- TABLET ---- */

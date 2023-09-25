@@ -1,1 +1,0 @@
-import"swiper/css";import"swiper/css/navigation";import"swiper/css/pagination";import"./index.html";import"./styles/main.css";import lMainContainer from"./src/app/components/l-main-container/l-main-container.js";

@@ -22,7 +22,6 @@
 }
 .b-brands--box-model {
   padding-bottom: 24px;
-  position: relative;
 }
 
 /* ---- MOBILE ---- */
@@ -37,9 +36,12 @@
     z-index: 10;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0) 100%);
   }
+  .b-brands--box-model {
+    position: relative;
+  }
 }
 /* ---- TABLET ---- */
-@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+@media screen and (min-width: 767.9px) and (max-width: 1119.9px) {
   .b-brands__title {
     margin-bottom: 24px;
   }
@@ -51,7 +53,7 @@
   }
 }
 /* ---- DESKTOP ---- */
-@media screen and (min-width: 1023.9px) {
+@media screen and (min-width: 1120px) {
   .b-brands__title {
     margin-bottom: 40px;
   }

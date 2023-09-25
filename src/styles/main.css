@@ -66,4 +66,7 @@ li {
     order: -1;
   }
 }
-/* !----- DEVELOP_MODE -----! *//*# sourceMappingURL=main.css.map */
+/* !----- DEVELOP_MODE -----! */
+.l-aside-container {
+  display: none !important;
+}/*# sourceMappingURL=main.css.map */
